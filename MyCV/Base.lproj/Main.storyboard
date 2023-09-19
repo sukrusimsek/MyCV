@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pnu-eY-eis">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Teknik Bilgilerim-->
+        <scene sceneID="bQS-Fy-iCE">
+            <objects>
+                <viewController id="PZy-A8-aEb" customClass="DigitalSkillsVC" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KLj-Li-JHh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tSZ-Mm-b8K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Teknik Bilgilerim" id="fhw-lx-pLo">
+                        <imageReference key="image" image="terminal.fill" catalog="system" symbolScale="default"/>
+                        <imageReference key="landscapeImage" image="terminal" catalog="system" symbolScale="default"/>
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hC9-o2-Jf1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="814"/>
+        </scene>
+        <!--Yaptığım Uygulamalar-->
+        <scene sceneID="y8k-Lo-Vj2">
+            <objects>
+                <viewController id="Z4K-Ir-eyO" customClass="MakeAppsVC" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RNa-Nz-Wh8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TG5-pY-uKp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Yaptığım Uygulamalar" id="R6W-rM-ERe">
+                        <imageReference key="image" image="applelogo" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mph-l3-y6v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="494"/>
+        </scene>
+        <!--Tabbar Controller-->
+        <scene sceneID="uUd-j7-Djd">
+            <objects>
+                <tabBarController id="Pnu-eY-eis" customClass="TabbarController" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="L4p-ZC-rY8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="initialIndex">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="PZy-A8-aEb" kind="relationship" relationship="viewControllers" id="2US-xZ-J2V"/>
+                        <segue destination="Z4K-Ir-eyO" kind="relationship" relationship="viewControllers" id="GxC-21-iId"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Z3f-eq-9qh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgw-mN-17s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-740" y="308"/>
+        </scene>
+        <!--Ana Sayfa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZ8-Qq-Yca">
+                                <rect key="frame" x="217" y="145" width="77" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="UEA-iX-Vx3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WP-Mk-gpb">
+                                <rect key="frame" x="217" y="182" width="161" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="gUc-15-bMw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şükrü Şimşek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHY-Qs-LaS">
+                                <rect key="frame" x="217" y="210" width="154" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="0NZ-Ok-Ddd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pvq-Aq-AYH">
+                                <rect key="frame" x="38" y="90" width="146" height="141"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CAl-5M-L2E">
+                                <rect key="frame" x="10" y="251" width="394" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="gKW-IV-sGK"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moH-xv-DyW">
+                                <rect key="frame" x="10" y="481" width="394" height="332"/>
+                                <mutableString key="text"> Ben Şükrü Şimşek, 24 yaşındayım ve iOS Developer olarak çalışmaktayım. Yazılım alanında kendimi sürekli olarak geliştirmek için çaba harcıyorum ve yeniliklere açık bir yaklaşıma sahibim. İzmir Demokrasi Üniversitesi'nden 4 yıllık lisans derecesi ile mezun oldum.
+
+Yazılım yolculuğum lise yıllarımda Pnömatik ve Robotik sistemlerin kodlamasıyla başladı. Bu süreçte, temel programlama becerilerimi geliştirme ve projeler üzerinde çalışma fırsatı buldum. Ardından iOS geliştirme alanına ilgi duydum ve bu alanda kendimi geliştirmeye odaklandım.
+
+Özellikle Swift, UIKit ve SwiftUI konularında uzmanlık kazandım. Bu dilleri kullanarak kullanıcı dostu ve işlevsel mobil uygulamalar geliştirme konusunda deneyim sahibiyim. Yazılım projelerimde dikkatimi detaylara vererek, kaliteli ve güvenilir uygulamalar oluşturmak için çaba harcarım.
+
+CV'mde yer alan uygulamalarım sekmesinden, şimdiye kadar geliştirdiğim projeleri görebilirsiniz. Bu projeler, benim yeteneklerimi ve gelişimimi sergilemektedir. Aynı zamanda takım çalışmasına önem veren bir yapım olduğunu da belirtmek isterim.
+
+Yeni projelerde yer almak, ileri düzeydeki becerilerimi kullanmak ve takımınıza katkı sağlamak için sabırsızlanıyorum. İlerlemeye devam etmek ve yazılım dünyasındaki yeni teknolojileri keşfetmek beni heyecanlandırıyor.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CAl-5M-L2E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="3PL-pR-PYc"/>
+                            <constraint firstItem="CAl-5M-L2E" firstAttribute="leading" secondItem="moH-xv-DyW" secondAttribute="leading" id="3Wb-bu-15X"/>
+                            <constraint firstItem="hHY-Qs-LaS" firstAttribute="top" secondItem="3WP-Mk-gpb" secondAttribute="bottom" id="5Sn-hx-bJA"/>
+                            <constraint firstItem="CAl-5M-L2E" firstAttribute="trailing" secondItem="moH-xv-DyW" secondAttribute="trailing" id="Buw-4H-rMW"/>
+                            <constraint firstItem="moH-xv-DyW" firstAttribute="top" secondItem="CAl-5M-L2E" secondAttribute="bottom" constant="8" symbolic="YES" id="Cyj-qM-UKt"/>
+                            <constraint firstItem="CAl-5M-L2E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fms-0b-bUZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hHY-Qs-LaS" secondAttribute="trailing" constant="43" id="HiC-tX-xm8"/>
+                            <constraint firstItem="3WP-Mk-gpb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="138" id="I9Z-YZ-jyc"/>
+                            <constraint firstItem="uZ8-Qq-Yca" firstAttribute="leading" secondItem="3WP-Mk-gpb" secondAttribute="leading" id="JGI-Eg-Ino"/>
+                            <constraint firstItem="pvq-Aq-AYH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="LFx-1l-KNl"/>
+                            <constraint firstItem="3WP-Mk-gpb" firstAttribute="leading" secondItem="hHY-Qs-LaS" secondAttribute="leading" id="QQI-ZF-k4i"/>
+                            <constraint firstItem="CAl-5M-L2E" firstAttribute="top" secondItem="hHY-Qs-LaS" secondAttribute="bottom" constant="15" id="b3j-M4-wEo"/>
+                            <constraint firstItem="CAl-5M-L2E" firstAttribute="top" secondItem="pvq-Aq-AYH" secondAttribute="bottom" constant="20" id="bwl-8B-r3g"/>
+                            <constraint firstItem="moH-xv-DyW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eMl-sB-atl"/>
+                            <constraint firstItem="uZ8-Qq-Yca" firstAttribute="leading" secondItem="pvq-Aq-AYH" secondAttribute="trailing" constant="33" id="efi-Ey-ILR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3WP-Mk-gpb" secondAttribute="trailing" constant="36" id="h8u-n9-2wj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uZ8-Qq-Yca" secondAttribute="trailing" constant="120" id="lN1-Yy-Vyd"/>
+                            <constraint firstItem="uZ8-Qq-Yca" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="mZW-sF-hM6"/>
+                            <constraint firstItem="pvq-Aq-AYH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="vJW-eH-OaQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ana Sayfa" id="Usp-ZL-zgK">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imgView" destination="CAl-5M-L2E" id="JRg-iW-wCT"/>
+                        <outlet property="lblDeveloper" destination="3WP-Mk-gpb" id="KdS-8V-qjp"/>
+                        <outlet property="lblName" destination="hHY-Qs-LaS" id="arU-mp-God"/>
+                        <outlet property="lbliOS" destination="uZ8-Qq-Yca" id="5Pq-tp-dAi"/>
+                        <outlet property="profileImg" destination="pvq-Aq-AYH" id="Vi4-s5-5CN"/>
+                        <outlet property="txtView" destination="moH-xv-DyW" id="GXm-Je-SkE"/>
+                        <segue destination="jS5-Hy-Nai" kind="show" identifier="toDailyRoutine" id="ygf-Vj-PXY"/>
+                        <segue destination="vgm-iQ-jzw" kind="show" identifier="toFeedBackPage" id="hZg-iE-k7I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="-212.27678571428569"/>
+        </scene>
+        <!--Feed BackVC-->
+        <scene sceneID="I25-XH-lg3">
+            <objects>
+                <viewController id="vgm-iQ-jzw" customClass="FeedBackVC" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CqE-w1-KxJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fiV-SP-vrV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WqX-TS-8fS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NjC-Fo-Cr4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.69565217391312" y="-991.07142857142856"/>
+        </scene>
+        <!--Daily RoutineVC-->
+        <scene sceneID="Ps0-9C-6Tm">
+            <objects>
+                <viewController id="jS5-Hy-Nai" customClass="DailyRoutineVC" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="O5n-7A-vou">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="8qE-iV-nnn"/>
+                    <connections>
+                        <outlet property="dailyRoutineTableView" destination="O5n-7A-vou" id="JeK-al-piD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBs-fh-qWL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198.5507246376812" y="-312.05357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applelogo" catalog="system" width="103" height="128"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="terminal" catalog="system" width="128" height="93"/>
+        <image name="terminal.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
